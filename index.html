@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchPad - High-Converting Micro-SaaS & Digital Product Landing Page</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased selection:bg-primary-600 selection:text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 inset-x-0 z-50 bg-gray-950/80 backdrop-blur-lg border-b border-gray-800/60">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-primary-600 to-violet-500 flex items-center justify-center text-white shadow-lg shadow-primary-500/25">
+          <i class="fa-solid fa-rocket text-sm"></i>
+        </div>
+        <span class="font-outfit font-extrabold text-xl tracking-tight text-white">Launch<span class="text-primary-500">Pad</span></span>
+      </div>
+
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="#features" class="hover:text-white transition">Features</a>
+        <a href="#comparison" class="hover:text-white transition">Why Us</a>
+        <a href="#pricing" class="hover:text-white transition">Pricing</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="#pricing" class="bg-gradient-to-r from-primary-600 to-violet-600 hover:from-primary-500 hover:to-violet-500 text-white text-xs sm:text-sm font-semibold px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl shadow-lg shadow-primary-500/25 transition">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
+    <!-- Glow Background Effects -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-primary-600/20 blur-[130px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/30 text-primary-400 text-xs font-semibold mb-6">
+        <span class="flex h-2 w-2 rounded-full bg-primary-500 animate-pulse"></span>
+        v2.0 Just Released - Ship 10x Faster
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-outfit font-black tracking-tight text-white leading-[1.1]">
+        Launch Your Micro-SaaS in <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 via-violet-300 to-indigo-200">Days, Not Months</span>
+      </h1>
+
+      <p class="max-w-2xl mx-auto mt-6 text-base sm:text-lg text-gray-400 leading-relaxed">
+        The ultimate battle-tested template designed to turn your code, scripts, or digital products into profitable revenue streams with zero design headache.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#pricing" class="w-full sm:w-auto bg-gradient-to-r from-primary-600 to-violet-600 hover:from-primary-500 hover:to-violet-500 text-white font-bold text-sm px-8 py-3.5 rounded-xl shadow-xl shadow-primary-500/30 transition flex items-center justify-center gap-2">
+          <span>Get Instant Access</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+        <a href="#features" class="w-full sm:w-auto bg-gray-900/80 hover:bg-gray-800 text-gray-300 border border-gray-800 font-semibold text-sm px-6 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+          <i class="fa-regular fa-circle-play text-xs text-primary-400"></i>
+          <span>See How It Works</span>
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="mt-12 pt-8 border-t border-gray-900/80 flex flex-wrap items-center justify-center gap-6 text-xs text-gray-500 font-medium">
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-green-500"></i> Lifetime Updates</span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-green-500"></i> 100% Clean Code</span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-green-500"></i> Ready for Stripe & Gumroad</span>
+        <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-green-500"></i> 4.9/5 Rating (180+ Reviews)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Grid -->
+  <section id="features" class="py-20 bg-gray-900/40 border-y border-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs uppercase tracking-widest text-primary-400 font-bold">Engineered for Conversions</h2>
+        <p class="font-outfit font-extrabold text-3xl sm:text-4xl text-white mt-2">Everything You Need to Sell Out</p>
+        <p class="text-gray-400 text-sm mt-3">Stop wasting weeks building marketing pages from scratch. Focus on your product.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-gray-900/80 border border-gray-800 hover:border-gray-700 transition">
+          <div class="w-12 h-12 rounded-xl bg-primary-500/10 text-primary-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="font-outfit font-bold text-lg text-white">Blazing Fast Speed</h3>
+          <p class="text-sm text-gray-400 mt-2">Zero heavy dependencies. Scores 99+ on Google Lighthouse for maximum organic SEO ranking.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-gray-900/80 border border-gray-800 hover:border-gray-700 transition">
+          <div class="w-12 h-12 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-credit-card"></i>
+          </div>
+          <h3 class="font-outfit font-bold text-lg text-white">Ready-to-Use Billing</h3>
+          <p class="text-sm text-gray-400 mt-2">Plug in your Gumroad, LemonSqueezy, or Stripe checkout links in less than 60 seconds.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-gray-900/80 border border-gray-800 hover:border-gray-700 transition">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <h3 class="font-outfit font-bold text-lg text-white">Mobile-First Polish</h3>
+          <p class="text-sm text-gray-400 mt-2">Looks pixel-perfect on iPhone, Android, tablets, and 4K desktop screens automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table with Monthly/Annual Toggle -->
+  <section id="pricing" class="py-24 relative">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <h2 class="text-xs uppercase tracking-widest text-primary-400 font-bold">Simple, Transparent Pricing</h2>
+        <p class="font-outfit font-extrabold text-3xl sm:text-4xl text-white mt-2">Pay Once, Profit Forever</p>
+        <p class="text-gray-400 text-sm mt-3">Choose the plan that fits your ambition. No hidden fees or recurring subscriptions.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Starter Tier -->
+        <div class="p-8 rounded-3xl bg-gray-900/60 border border-gray-800 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <h3 class="font-outfit font-bold text-xl text-white">Starter License</h3>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-800 text-gray-400">Single Project</span>
+            </div>
+            <p class="text-xs text-gray-400 mt-2">Perfect for launching your first tool or script.</p>
+
+            <div class="mt-6 flex items-baseline gap-1">
+              <span class="text-4xl font-outfit font-black text-white">$19</span>
+              <span class="text-xs text-gray-400">/ one-time</span>
+            </div>
+
+            <ul class="mt-8 space-y-3 text-sm text-gray-300">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-primary-400 text-xs"></i> Full HTML + Tailwind Source Code</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-primary-400 text-xs"></i> Responsive Hero & Pricing Cards</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-primary-400 text-xs"></i> Gumroad / LemonSqueezy Integration</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-primary-400 text-xs"></i> Free GitHub Pages Hosting Guide</li>
+            </ul>
+          </div>
+
+          <a href="https://gumroad.com" target="_blank" class="mt-8 w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-xl transition text-center text-sm">
+            Buy Starter License ($19)
+          </a>
+        </div>
+
+        <!-- Pro Unlimited Tier (Highlighted) -->
+        <div class="relative p-8 rounded-3xl bg-gradient-to-b from-gray-900 via-gray-900/90 to-primary-950/40 border-2 border-primary-500 flex flex-col justify-between shadow-2xl shadow-primary-500/10">
+          <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-primary-500 to-violet-500 text-white text-[11px] font-extrabold uppercase px-3 py-1 rounded-full shadow-lg">
+            Most Popular
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between">
+              <h3 class="font-outfit font-bold text-xl text-white">Agency & Commercial</h3>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary-500/20 text-primary-300">Unlimited</span>
+            </div>
+            <p class="text-xs text-gray-400 mt-2">For freelancers & developers launching multiple client projects.</p>
+
+            <div class="mt-6 flex items-baseline gap-1">
+              <span class="text-4xl font-outfit font-black text-white">$49</span>
+              <span class="text-xs text-gray-400">/ one-time</span>
+            </div>
+
+            <ul class="mt-8 space-y-3 text-sm text-gray-300">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-primary-400 text-xs"></i> Everything in Starter</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-primary-400 text-xs"></i> Unlimited Client / Commercial Projects</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-primary-400 text-xs"></i> Figma Design Files Included</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-primary-400 text-xs"></i> Priority Email Support & Setup Assistance</li>
+            </ul>
+          </div>
+
+          <a href="https://gumroad.com" target="_blank" class="mt-8 w-full bg-gradient-to-r from-primary-600 to-violet-600 hover:from-primary-500 hover:to-violet-500 text-white font-bold py-3.5 rounded-xl shadow-xl shadow-primary-500/30 transition text-center text-sm">
+            Get Pro Unlimited ($49)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive FAQ Accordion -->
+  <section id="faq" class="py-20 bg-gray-900/30 border-t border-gray-900">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="font-outfit font-extrabold text-3xl text-white">Frequently Asked Questions</h2>
+        <p class="text-gray-400 text-sm mt-2">Have a question? We've got answers.</p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-gray-900/60 border border-gray-800 rounded-2xl p-5 cursor-pointer">
+          <summary class="flex items-center justify-between font-outfit font-semibold text-white list-none text-sm">
+            <span>Can I customize the colors, text, and pricing?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+            Yes, 100%! The template is built with clean HTML5 and Tailwind CSS. You can change any title, price, or color scheme in under 5 minutes without touching complex build tools.
+          </p>
+        </details>
+
+        <details class="group bg-gray-900/60 border border-gray-800 rounded-2xl p-5 cursor-pointer">
+          <summary class="flex items-center justify-between font-outfit font-semibold text-white list-none text-sm">
+            <span>Do I have to pay monthly hosting fees?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+            No! You can host this landing page for free forever on GitHub Pages, Vercel, Netlify, or Cloudflare Pages with zero monthly cost.
+          </p>
+        </details>
+
+        <details class="group bg-gray-900/60 border border-gray-800 rounded-2xl p-5 cursor-pointer">
+          <summary class="flex items-center justify-between font-outfit font-semibold text-white list-none text-sm">
+            <span>Can I use this for client work?</span>
+            <i class="fa-solid fa-chevron-down text-xs text-gray-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-gray-400 mt-3 leading-relaxed">
+            Yes! With the Pro License, you can use this template to build client websites and charge $150–$300+ per setup while keeping 100% of the profits.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-gray-900 text-center text-xs text-gray-500">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 LaunchPad. Crafted for high conversions.</p>
+      <div class="flex gap-6">
+        <a href="#features" class="hover:text-gray-400 transition">Features</a>
+        <a href="#pricing" class="hover:text-gray-400 transition">Pricing</a>
+        <a href="https://github.com/Shahabuddin-mahar" class="hover:text-gray-400 transition">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
